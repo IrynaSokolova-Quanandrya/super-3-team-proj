@@ -1,7 +1,7 @@
 body {
-    // color: $primaryTextColor;
-    // background-color: $backgroundColor;
-    // font-family: roboto, sans-serif;
+    color: $primaryTextColor;
+    background-color: $backgroundColor;
+    font-family: Inter, sans-serif;
   }
   *,
   *::before,
@@ -10,7 +10,7 @@ body {
   }
   a {
     text-decoration: none;
-    // color: $primaryTextColor;
+    color: $primaryTextColor;
   }
   h1,
   h2,
