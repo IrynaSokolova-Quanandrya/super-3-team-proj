@@ -5,8 +5,16 @@
         display: flex;
     flex-wrap: wrap;
         height: 351px;
+        padding-top: 18px;
+        padding-bottom: 18px;
         
         }
+        @media screen and (min-width: 1140px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+            
+            }
     
 
 }
@@ -42,6 +50,7 @@ font-weight: 300;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
+margin-top: 18px;
 @media screen and (max-width: 767px){
  
         display: none;
