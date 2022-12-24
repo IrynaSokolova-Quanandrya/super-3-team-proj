@@ -1,0 +1,44 @@
+.hero {
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
+}
+.hero-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+    width: 320px;
+}
+.mobile-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    width: 350px;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+.tab-desk-text {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+}
+.hero-button {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 13px 29px;
+    color: $primaryTextColor;
+    background-color: $buttonBackgroundColor;
+    border-radius: 17px;
+    margin-top: 72px;
+    cursor: pointer;
+}
