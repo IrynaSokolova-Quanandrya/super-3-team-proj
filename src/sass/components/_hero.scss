@@ -1,3 +1,14 @@
+.hero-section {
+    padding-bottom: 36px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 99px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 125px;
+        padding-left: 160px;
+    }
+}
 .hero {
     @media screen and (max-width: 767px) {
         padding: 0;
@@ -25,9 +36,24 @@
 }
 .tab-desk-text {
     display: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
 
     @media screen and (min-width: $tablet) {
         display: block;
+        margin-top: 24px;
+        width: 570px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 22px;
+        margin-bottom: 33px;
+        font-size: 21px;
+        line-height: 25px;
+
     }
 }
 .hero-button {
@@ -38,7 +64,17 @@
     padding: 13px 29px;
     color: $primaryTextColor;
     background-color: $buttonBackgroundColor;
+    border: none;
     border-radius: 17px;
     margin-top: 72px;
     cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+    @media screen and (min-width: $desktop) {
+        display: block;
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
