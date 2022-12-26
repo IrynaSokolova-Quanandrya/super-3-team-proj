@@ -1,0 +1,50 @@
+.section-why{
+    @media screen and (max-width: 767px ){
+    padding-top: 15px;
+   padding-bottom: 65px;
+    } 
+   
+
+    text-align: center;
+    background-image: url(/src/images/bgiWhy.png);
+    background-position: center;
+    background-size:cover 
+    // background-repeat: no-repeat;
+
+}
+.why-title{
+
+
+font-style: normal;
+
+@media screen and (min-width: $mobile ) {
+font-weight: 200;
+font-size: 28px;
+line-height: 39px;
+text-align: start;
+}
+@media screen and (min-width: $tablet ){
+text-align: center;
+}
+}
+
+.why-list{
+   padding: 0;
+   margin: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+.why-item{
+    margin: 15px;
+}
+.why-icon{
+   fill: $primaryTextColor;
+
+}
+.why-text{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+}
