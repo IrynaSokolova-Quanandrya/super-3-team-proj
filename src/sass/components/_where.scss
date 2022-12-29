@@ -13,12 +13,35 @@
         width: 157px;
         margin-bottom: 15px;
     }
+    @media screen and (min-width: $tablet){
+        font-family: "Inter";
+font-size: 48px;
+font-weight: 300;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 43px;
+}
+@media screen and (min-width: $desktop) {
+    font-family: "Italiana";
+font-size: 48px;
+font-weight: 400;
+line-height: 57px;
+letter-spacing: 0em;
+text-align: left;
+
+}
 }
 .where-box{
     @media screen and (min-width: $mobile) {
       margin-left: 7px;
       margin-bottom: 43px;
       margin-top: 38px;
+    }
+    @media screen and (min-width: $tablet){
+        margin-left: 161px;
+        margin-bottom: 43px;
+        margin-top: 0;
     }
 }
 .text-how{
@@ -29,11 +52,24 @@
         font-weight: 400;
         margin-bottom: 15px;
     }
+    @media screen and (min-width: $tablet){
+        margin-bottom: 49px;
+        font-family: "Inter";
+font-size: 40px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+    }
 }
 .how-box{
     @media screen and (min-width: $mobile) {
         margin-left: 38px;
         margin-bottom: 48px;
+    }
+    @media screen and (min-width: $tablet){
+        margin-left: 124px;
+        margin-top: 180px;
     }
 }
 .text{
@@ -48,6 +84,9 @@
         font-style: normal;
         width: 219px;
         height: 29px;
+    }
+    @media screen and (min-width: $tablet){
+        margin-bottom: 36px;
     }
 }
 .text.tik-tok{
@@ -74,6 +113,16 @@
         margin-left: 37px;
         margin-bottom: 15px;
     }
+    @media screen and (min-width: $tablet){
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-family: Inter;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
 }
 .text-time{
     @media screen and (min-width: $mobile) {
@@ -83,5 +132,21 @@
         line-height: 29px;
 
         color: #FFFFFF;
+    }
+}
+.general-box{
+    @media screen and (min-width: $tablet){
+        display: flex;
+    }
+}
+.where-img{
+    @media screen and (min-width: $tablet){
+        width: 535px;
+    }
+}
+.when-box{
+    @media screen and (min-width: $tablet){
+        margin-right: 20px;
+        margin-top: 180px;
     }
 }
