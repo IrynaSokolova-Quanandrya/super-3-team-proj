@@ -1,14 +1,61 @@
+.footer{
+    position: relative;
+    @media screen and (min-width: 768px){
+ 
+        display: flex;
+    flex-wrap: wrap;
+        height: 351px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        
+        }
+        @media screen and (min-width: 1140px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+            
+            }
+    
 
-
+}
+.footer-title-div{
+    margin-top: 18px;
+    margin-bottom: 19px;
+    margin-left: 17px;
+    width: 322px;
+    @media screen and (min-width: 768px){
+ width: 768px;
+       
+        
+        }
+        @media screen and (min-width: 1140px){
+            width: 322px;
+                  
+                   
+                   }
+}
 .footer-h2{
-margin-left: 17px;
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 200;
 font-size: 36px;
 line-height: 44px;
+
+}
+.footer-text2{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
 margin-top: 18px;
-margin-bottom: 19px;
+@media screen and (max-width: 767px){
+ 
+        display: none;
+        
+}
 }
 .footer-list{
     display: flex;
@@ -16,7 +63,8 @@ margin-bottom: 19px;
 padding: 0;
 }
 .footer-item1{
-    width: 90;
+    
+    width: 90px;
     margin-left: 23px;
     font-family: Inter;
 font-size: 24px;
@@ -24,6 +72,14 @@ font-weight: 200;
 line-height: 29px;
 letter-spacing: 0em;
 text-align: center;
+@media screen and (min-width: 768px){
+
+width: 142px;
+margin: 0px;
+margin-left: 100px;
+
+}
+    
 
 }
 .footer-item2{
@@ -36,6 +92,12 @@ letter-spacing: 0em;
 text-align: center;
 margin-left: 13px;
 margin-right: 10px;
+@media screen and (min-width: 768px){
+
+    width: 150px;
+    margin: 0;
+    margin-left: 100px;
+    }
 }
 .footer-item3{
     width: 130px;
@@ -47,6 +109,12 @@ letter-spacing: 0em;
 text-align: center;
 margin-left: 21px;
 margin-right: 18px;
+@media screen and (min-width: 768px){
+
+    width: 140px;
+    margin: 0;
+    margin-left: 100px;
+    }
 
 }
 .footer-item-h{
@@ -57,10 +125,26 @@ width: 139px;
 margin-top: 35px;
 margin-left: 25px;
 margin-bottom: 25px;
+@media screen and (min-width: 768px){
+ 
+        width: 1;
+        height: 1;
+        margin: -1;
+    display: none;
+    
+    }
 }
 .footer-div2{
 width: 219px;
 margin-left: 25px;
+@media screen and (min-width: 768px){
+    position:absolute;
+    left:calc(50% - 137px) ;
+    bottom: 0px;
+         width: 275px;
+    margin: 0;
+    
+    }
 }
 .footer-text{
     font-family: Inter;
@@ -83,7 +167,15 @@ text-align: left;
 .footer-linkslist{
     list-style: none;
     padding: 0;
+    display: flex;
+   
+
+    
+    flex-wrap: wrap;        
+        
 }
+
+    
 
 
 
