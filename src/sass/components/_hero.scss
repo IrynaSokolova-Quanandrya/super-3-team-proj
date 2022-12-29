@@ -1,14 +1,14 @@
-.hero-section {
-    padding-bottom: 36px;
+// .hero-section {
+//     padding-bottom: 36px;
 
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 99px;
-    }
-    @media screen and (min-width: $desktop) {
-        padding-bottom: 125px;
-        padding-left: 160px;
-    }
-}
+//     @media screen and (min-width: $tablet) {
+//         padding-bottom: 99px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//         padding-bottom: 125px;
+//         padding-left: 160px;
+//     }
+// }
 .hero {
     @media screen and (max-width: 767px) {
         padding: 0;
