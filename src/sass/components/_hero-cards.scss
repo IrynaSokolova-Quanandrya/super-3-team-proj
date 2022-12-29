@@ -14,26 +14,59 @@
       flex-direction: column;
      text-align: center;
      justify-content: center;
-
+     
       
     }
-    
-    
-}
+    @media screen and (min-width: $tablet){
+        flex-direction: row;
+        width: 227px;
+        height: 139px;
+        background-color: rgba(242, 242, 242, 0.3);
+        margin-right: 70px;
+    }
+    @media screen and (min-width: $desktop){
+        width: 310px;
+        height: 225px;
+       }
+ 
 
-.headercards-li:not(:first-child){
-    @media screen and (max-width: 767px){
-        display: none;
+    &:not(:first-child){
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+        
     }
     
+    &:last-child{
+        @media screen and (max-width: 1139px){
+            display: none;
+        }
+    }
+   
 }
 
+
+
 .cards-image{
-    width: 100%;
-    width: 226px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 100%;
+    
+    @media screen and (min-width: $mobile){
+      width: 200px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+    }
+
+    @media screen and (min-width: $tablet){
+       width: 101px;
+       height: 80px;
+       bottom: 10px;
+       left: 10px;
+      }
+
 }
 
 .cards-prise{
@@ -57,11 +90,26 @@
 .cards-button{
     color: white;
     background-color:  #C85312;
-    height: 34px;
-    width: 79px;
+    
     border: none;
     border-radius: 4px;
     margin-bottom: 18px;
+
+    @media screen and (min-width: $mobile){
+        height: 44px;
+        width: 131px;
+        font-weight:bolder;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 19px;
+      }
+
+    @media screen and (min-width: $desktop){
+        height: 34px;
+        width: 79px;
+        
+       }
+  
 }
 
 
