@@ -2,8 +2,10 @@
         padding-top: 27px;
         padding-bottom: 27px;
 
-        background-image: '../images/hero/backgroundImg.jpg';
-    
+        background-image: url(../images/hero/backgroundImg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
     
     @media screen and (min-width: $tablet){
         padding-top: 47px;
