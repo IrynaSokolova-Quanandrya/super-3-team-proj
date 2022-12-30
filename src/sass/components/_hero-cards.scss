@@ -6,9 +6,10 @@
     margin-left: auto;
     margin-right: auto;
     list-style: none;
-    background-color: #272727;
+    
 
-    @media screen and (min-width: $mobile){
+    @media screen and (max-width: 767px){
+        background-color: #272727;
       width: 258px;
       height: 329px;
       flex-direction: column;
@@ -18,15 +19,23 @@
       
     }
     @media screen and (min-width: $tablet){
-        flex-direction: row;
         width: 227px;
         height: 139px;
-        background-color: rgba(242, 242, 242, 0.3);
+        background-color: $cardBackgroundColor;
+        backdrop-filter: blur(18px);
         margin-right: 70px;
+        position: relative;
     }
     @media screen and (min-width: $desktop){
+        background-color: #272727;
         width: 310px;
         height: 225px;
+        transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1) ;
+        &:hover,
+        &:focus{
+            background-color: $accentColor;
+        }
+       
        }
  
 
@@ -42,40 +51,60 @@
             display: none;
         }
     }
+
    
 }
 
+.price-div{
+    line-height: 1px;
+@media screen and (min-width: $tablet){
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+   }
+
+
+}
 
 
 .cards-image{
-    // width: 100%;
+   
     
     @media screen and (min-width: $mobile){
-      width: 200px;
-      height: 150px;
-      margin-left: auto;
+        width: 200px;
+        height: 150px;
+     margin-left: auto;
       margin-right: auto;
-      margin-top: 20px;
-      margin-bottom: 15px;
+    //   margin-top: 10px;
+    //   margin-bottom: 20px;
 
     }
 
     @media screen and (min-width: $tablet){
-       width: 101px;
+        position: absolute;
+       width: 90px;
        height: 80px;
-       bottom: 10px;
-       left: 10px;
+       left: 5px;
+       bottom: 5px;
+      
+      
       }
+
+      @media screen and (min-width: $desktop){
+       width: 180px;
+       height: 180px;
+       }
+ 
 
 }
 
 .cards-prise{
-//    margin-top: 14px;
     font-style: normal;
     font-weight: 200;
     font-size: 24px;
     line-height: 29px;
-    
+    margin-bottom: 2px;
 }
 
 .cards-text{
@@ -84,33 +113,36 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 14px;
-    margin-top: 2px;
+    
 }
 
 .cards-button{
-    color: white;
+    color: $primaryTextColor;
     background-color:  #C85312;
-    
-    border: none;
+    padding: 8px 30px; 
     border-radius: 4px;
     margin-bottom: 18px;
-
-    @media screen and (min-width: $mobile){
-        height: 44px;
-        width: 131px;
-        font-weight:bolder;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 19px;
-      }
-
-    @media screen and (min-width: $desktop){
-        height: 34px;
-        width: 79px;
-        
+    border: none;
+    font-weight:bolder;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 19px;
+    @media screen and (min-width: $tablet){
+       margin-left: 110px;
+       margin-top: 30px;
        }
+       @media screen and (min-width: $desktop){
+        margin-left: 200px;
+       margin-top: 100px;
+        padding: 5px 22px;
+        }
+    
+}     
+
+
+   
   
-}
+
 
 
    
