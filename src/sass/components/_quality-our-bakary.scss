@@ -1,18 +1,30 @@
 .section-quality{
-    padding-top: 74px;
+    padding-top: 312px;
     background: #202023;
     width: 1448px;
     height: 960px;
 }
 .title-quality{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 100;
     font-size: 96px;
     line-height: 116px;
-    margin-bottom: 146px;
+    margin-bottom: 146px; */
+    position: absolute;
+    /* left: 594px; */
+    width: 843px;
+    height: 87px;
+    left: 332px;
+    top: 79px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 96px;
+    line-height: 116px;
+    /* // margin-bottom: 146px; */
     color: #FFFFFF;
 }
 .main-quality:not(:last-child){
@@ -22,6 +34,7 @@
     display: flex;
     list-style: none;
     justify-content: center;
+    margin-bottom: 146px;
 }
 .img-quality{
     width: 349px;
@@ -82,13 +95,22 @@
         /* margin-left: 594px; */
         /* margin-right: 353px; */
         /* display: inline; */
-        margin-left: 60px;
+        /* margin-left: 60px;
         font-family: 'Italiana';
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
         line-height: 75px;
 
+        color: #FFFFFF; */
+        position: absolute;
+        left: 593px;
+        top: 90px;
+        font-family: 'Italiana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 75px;
         color: #FFFFFF;
     }
     .div-quality{
