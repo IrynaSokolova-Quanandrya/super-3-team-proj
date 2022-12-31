@@ -7,8 +7,13 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(89.59deg, #000000 8.49%, rgba(3, 3, 3, 0) 50.14%);
+    background: none;
+    backdrop-filter: blur(4px);
     z-index: 10;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
 }
 .modal{
     display: flex;
@@ -17,23 +22,36 @@ li{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #FFFFFF;
-    border-radius: 50px;
+    height: 669px;
     @media screen and (min-width: 0) {
         width: 480px;
+        border-radius: 10px;
     }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $tablet) {
         width: 768px;
+        border-radius: 50px;
     }
     @media screen and (min-width: $desktop) {
         width: 990px;
+        border-radius: 50px;
     }
-    height: 669px;
 }
 .modal-information{
-   width: 514px;
-   padding-left: 83px;
-   padding-top: 94px;
-   padding-right: 19px;
+    width: 514px;
+    padding-top: 94px;
+    padding-right: 19px;
+    @media screen and (min-width: 0) {
+        padding-left: 19px;
+        text-align: center;
+    }
+    @media screen and (min-width: $tablet) {
+        padding-left: 83px;
+        text-align: left;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-left: 83px;
+        text-align: left;
+    }
 }
 .modal-tittle{
     margin-bottom: 40px;
@@ -72,19 +90,27 @@ li{
     }
 }
 .modal-bread{
+    pointer-events: none;
     @media screen and (min-width: 0) {
+        margin-left: 0px;
         opacity: 0;
+        width: 0;
+        height: 0;
     }
-    @media screen and (min-width: 600px) {
-        margin-top: 200px;
+    @media screen and (min-width: $tablet) {
+        margin-top: 50px;
+        margin-left: -10px;
         width: 254px;
-        height: 250px;
+        height: 600px;
         opacity: 100%;
+        background-image: url(../images/modal-bread2.png);
     }
     @media screen and (min-width: $desktop) {
         margin-top: 145px;
+        margin-left: 0px;
         height: 448px;
         width: 476px;
         opacity: 100%;
+        background-image: url(../images/modal-bread.png);
     }
 }
