@@ -1,6 +1,7 @@
 .section-quality{
     padding-top: 74px;
     background: #202023;
+    width: 1448px;
     height: 960px;
 }
 .title-quality{
@@ -78,9 +79,10 @@
 
     }
     .title-quality{
-        margin-left: 594px;
+        /* margin-left: 594px; */
         /* margin-right: 353px; */
-        display: inline;
+        /* display: inline; */
+        margin-left: 60px;
         font-family: 'Italiana';
         font-style: normal;
         font-weight: 400;
@@ -119,4 +121,5 @@
     } */
     .div-p-quality{
         padding: 0;
-    }}
+    }
+}
