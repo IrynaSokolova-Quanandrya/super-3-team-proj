@@ -1,0 +1,19 @@
+.hero-section{    
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        background-image: url(../images/hero/backgroundImg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    
+    @media screen and (min-width: $tablet){
+        padding-top: 47px;
+        padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop){
+        padding-top: 50px;
+        padding-bottom: 33px;
+    }
+}

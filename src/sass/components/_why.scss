@@ -3,14 +3,17 @@
     padding-top: 15px;
    padding-bottom: 65px;
     } 
-   
+    @media screen and (min-width: $desktop ){
+        background-image:  linear-gradient(89.59deg, #000000 8.49%, rgba(3, 3, 3, 0) 77.17%),  url(/images/bgiWhy.png); 
+    }
 
     text-align: center;
-    background-image: url(/src/images/bgiWhy.png);
+    background-image:  url(/images/bgiWhy.png);
+    
     background-position: center;
     background-size:cover 
     // background-repeat: no-repeat;
-
+   
 }
 .why-title{
 
@@ -25,18 +28,32 @@ text-align: start;
 }
 @media screen and (min-width: $tablet ){
 text-align: center;
+
+font-style: normal;
+font-weight: 400px;
+font-size: 43px;
+line-height: 77px;
 }
 }
 
 .why-list{
+    // display: flex;
    padding: 0;
    margin: 0;
     list-style: none;
     text-decoration: none;
-   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
 }
 .why-item{
     margin: 15px;
+    @media screen and (min-width: $tablet ){
+        width: calc((100% - 180px) / 3);
+    }
 }
 .why-icon{
    fill: $primaryTextColor;
