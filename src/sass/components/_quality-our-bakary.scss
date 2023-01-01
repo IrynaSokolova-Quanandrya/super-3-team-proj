@@ -1,6 +1,35 @@
+.quality{
+    position: relative;
+}
+.section-quality::after{
+    @media screen and (max-width: 1139px) {
+        display: none;
+    }
+
+        @media screen and (min-width: $desktop) {
+            --a: "Quality our bekary";
+    --b: var(--a) " " var(--a);
+    --c: var(--b) " " var(--b);
+    --d: var(--c) " " var(--c);
+    --e: var(--d) " " var(--d);
+
+    content: var(--e);
+        word-break: break-all;
+        color: $backgroundColor;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 77px;
+        
+        text-shadow: 1px 0 1px #FFFFFF, 
+                0 1px 1px #FFFFFF, 
+                -1px 0 1px #FFFFFF, 
+                0 -1px 1px #FFFFFF;
+                }
+                        
+        }
+
 
 @media screen and (max-width:767px){
-
     .section-quality{
         display: none;
     }
@@ -15,41 +44,65 @@
         display: flex;
         justify-content: center;
 
-        margin-bottom: 146px;
-
-        height: 87px;
-        left: 332px;
-        top: 79px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 100;
-        font-size: 96px;
         line-height: 116px;
         color: #FFFFFF;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 63px;
+            margin-bottom: 146px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 96px;
+            margin-bottom: 0;
+        }
     }
-    .main-quality:not(:last-child){
-        margin-right: 31px;
-    }
+
     .list-quality{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        padding: 0;
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            // list-style: none;
+            justify-content: space-between;
+            // padding: 0;
+        }
+        @media screen and (min-width: $desktop) {
+           position: absolute;
+        }
+        
+        
 
     }
     .img-quality{
-        width: 250px;
-        height: 219px;
+        @media screen and (min-width: $tablet) {
+            width: 225px;
+            height: 200px;
+        }
+        @media screen and (min-width: $desktop) {
+           width: 290px;
+        }
     }
 
     .div-quality{
         background: rgba(242, 242, 242, 0.3);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(18px);
-        width: 250px;
+
+        @media screen and (min-width: $tablet) {
+            width: 225px;
+            padding: 20px 10px;
+           
+        }
+        @media screen and (min-width: $desktop) {
+            width: 290px;
+            padding: 31px 5px 51px 10px;
+        }
+
+        
     
-        padding-top: 60px;
-        padding-bottom: 36px;
+        
     }
     .text-quality{
         display: flex;
@@ -58,10 +111,17 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
         line-height: 29px;    
         color: #FFFFFF;
         margin: 0;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 17px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 24px;
+        }
     }
 
     .div-p-quality{
@@ -70,18 +130,11 @@
     }}
 @media screen and (min-width:1140px) {
     .section-quality{
-        width: 1448px;
-        height: 852px;
         padding-top: 90px;
-        background: #202023;
+        padding-bottom: 47px;
 
     }
     .title-quality{
-
-        position: absolute;
-        left: 593px;
-        top: 90px;
-
         font-family: 'Italiana';
         font-style: normal;
         font-weight: 400;
@@ -91,40 +144,47 @@
         color: #FFFFFF;
     }
     .div-quality{
-        display: flex;
-        justify-content: center;
-        padding-top: 26px;
-        padding-bottom: 81px;
         background: rgba(242, 242, 242, 0.3);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(18px);
-        width: 350px;
     }
-    .main-quality:not(:last-child){
-      margin-right: 758px;
-    }
+    
     .list-quality{
+        position: absolute;
         display: flex;
         list-style: none;
         justify-content: center;
-        margin-bottom: 146px;
     }
-    .img-quality{
-        width: 349px;
-        height: 219px;
-    }
+    
     .kard-1{
-      margin-right: 758px;
+        @media screen and (min-width: $desktop) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
     }
     .kard-2{
-        position: absolute;
-        left: 549px;
-        top: 249px;
+        @media screen and (min-width: $desktop) {
+            top: 78px;
+            position: absolute;
+            left: 371px;
+        }
+        
+        // position: absolute;
+        // left: 549px;
+        // top: 249px;
     } 
     .kard-3{
-        position: absolute;
-        left: 927px;
-        top: 288px;
+        @media screen and (min-width: $desktop) {
+            position: absolute;
+            top: 150px;
+            left: 763px;
+        }
+        
+        // position: absolute;
+        // left: 927px;
+        // top: 288px;
     }
 
     .text-quality{

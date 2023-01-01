@@ -5,7 +5,7 @@
     
     @media screen and (min-width: $tablet ){
        padding-top: 162px;
-       padding-bottom: 262px;
+       padding-bottom: 193px;
     }
     @media screen and (min-width: $desktop ){
 
@@ -24,9 +24,8 @@
    
 }
 .why-title{
-
-
 font-style: normal;
+color: #D9D9D9;
 
 @media screen and (min-width: $mobile ) {
 font-weight: 200;
@@ -36,19 +35,14 @@ text-align: start;
 }
 @media screen and (min-width: $tablet ){
 text-align: center;
-
-font-style: normal;
-font-weight: 400px;
 font-size: 43px;
 line-height: 77px;
+margin-bottom: 120px;
 }
 @media screen and (min-width: $desktop ){
-    text-align: start;
+text-align: start;
 width: 735px;
-font-style: normal;
-font-weight: 400px;
 font-size: 48px;
-line-height: 77px;
 }
 }
 
@@ -61,7 +55,7 @@ line-height: 77px;
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
  
 }
