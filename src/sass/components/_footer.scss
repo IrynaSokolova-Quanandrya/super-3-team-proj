@@ -1,22 +1,24 @@
+.section-footer{
+    @media screen and (max-width: 1139px){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1140px){
+        padding-top: 40px;
+        padding-bottom: 40px;            
+    }    
+}
 .footer{
     position: relative;
     @media screen and (min-width: 768px){
  
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
         height: 351px;
-        padding-top: 18px;
-        padding-bottom: 18px;
+        
         
         }
-        @media screen and (min-width: 1140px){
-        padding-top: 40px;
-        padding-bottom: 40px;
-        
-            
-            }
-    
-
 }
 .footer-title-div{
     margin-top: 18px;
