@@ -44,7 +44,7 @@ text-align: left;
         margin-top: 0;
     }
     @media screen and (min-width: $desktop) {
-        margin-left: 0;
+        margin-left: 168px;
     }
 }
 .text-how{
@@ -134,18 +134,13 @@ text-align: left;
         color: #FFFFFF;
     }
 }
-.general{
+.container-general{
     @media screen and (min-width: $tablet){
         display: flex;
     }
 }
-// .where-img{
-//     @media screen and (min-width: $tablet){
-//         width: 535px;
-//     }
-// }
 .when-box{
-    @media screena and (min-width: $mobile){
+    @media screen and (min-width: $mobile){
         margin-left: 33px;
     }
     @media screen and (min-width: $tablet){
@@ -154,10 +149,9 @@ text-align: left;
     }
 }
 .section-where{
-    @media screen and (min-width: $mobile){
-        padding-bottom: 38px;
-        padding-top: 22px;
-    }
+    background-color: #1B1C1E;
+    padding-bottom: 38px;
+    padding-top: 22px;
 }
 .item-where{
     @media screen and (min-width: $mobile){
