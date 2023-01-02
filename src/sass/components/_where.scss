@@ -1,11 +1,12 @@
 .where-list{
-    @media screen and (min-width: $mobile) {
-        padding: 0;
-    }
+    padding: 0;
 }
 .where-img{
     @media screen and (min-width: $tablet){
-        width: 250px;
+        width: 278px;
+    }
+    @media screen and (min-width: $tablet){
+        width: 300px;
     }
 }
 .text-where{
@@ -50,12 +51,12 @@
         margin: 0;
     }
 }
-.text-how{ 
+.title{ 
         font-weight: 400;
         line-height: 48px;
         letter-spacing: 0em;
         text-align: left;
-        font-size: 40px;
+        font-size: 30px;
         color: #FFFFFF;
         margin-bottom: 40px;
 
@@ -63,8 +64,15 @@
     @media screen and (min-width: $tablet){
        font-size: 32px;
     }
+    @media screen and (min-width: $desktop){
+        font-size: 38px;
+     }
+
 }
 .how-box{
+    margin-left: 30px;
+    margin-bottom: 48px;
+
     @media screen and (min-width: $mobile) {
         margin-left: 38px;
         margin-bottom: 48px;
@@ -76,7 +84,7 @@
     }
 }
 .text{   
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 29px;
         letter-spacing: 0em;
@@ -86,9 +94,9 @@
             margin-bottom: 28px;
         }
 
-    @media screen and (min-width: $desktop){
-        margin-bottom: 36px;
-    }
+        @media screen and (min-width: $desktop){
+            margin-bottom: 36px;
+        }
 }
 
 .text-when{
@@ -132,10 +140,8 @@
     }
 }
 .when-box{
-    @media screen and (min-width: $mobile){
-        margin-left: 0;
-        margin-right: 0;
-    }
+    margin-left: 30px;
+
     @media screen and (min-width: $tablet){
         margin: 0;
         padding-top: 95px;
@@ -146,8 +152,8 @@
     padding-bottom: 38px;
     padding-top: 22px;
 }
-.item-where{
-    @media screen and (min-width: $mobile){
+.item-where:not(:last-child){
+    @media screen and (max-width: 767px){
         margin-bottom: 29px;
     }
 }
