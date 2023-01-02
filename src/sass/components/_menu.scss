@@ -1,0 +1,97 @@
+.section {
+    @media screen and (max-width: 767px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 393px;
+        height: 852px;
+    }
+    @media screen and (min-width: $tablet) {
+        padding-top: 38px;
+        padding-bottom: 71px;
+        width: 1440px;
+        height: 960px;        
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 21px;
+        padding-bottom: 73px;
+        width: 1440px;
+        height: 775px;        
+    }
+}
+
+.menu-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    
+        font-size: 48px;
+        line-height: 58px;
+    
+    @media screen and (min-width: $tablet) {
+        font-size: 96px;
+        line-height: 116px;        
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 64px;
+        line-height: 77px;
+    }
+}
+
+.menu-list {
+    list-style: none;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin: -50px;
+        flex-wrap: wrap;
+
+    }
+}
+
+.menu-item {
+    @media screen and (min-width: $desktop) {
+        margin: 50px;
+        width: calc((100% - 50px * 4) /2)
+    }
+}
+
+.menu-item img{
+    @media screen and (min-width: $desktop) {
+        border: 1px solid #FFFFFF;
+    }
+}
+
+.menu-img {
+    border: 1px solid white;
+}
+
+.menu-text{
+    font-family: 'Inter';
+    font-style: normal;
+
+    
+        font-weight: 400;
+        font-size: 25.92px;
+        line-height: 31px;
+        text-align: center;
+   
+    @media screen and (min-width: $tablet) {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    @media screen and (min-width: $mobile) {
+        font-weight: 800;
+        font-size: 25.92px;
+        line-height: 31px;
+    }
+}
+
+.menu-button {
+    background: #B47B48;
+    border-radius: 17px;
+}
