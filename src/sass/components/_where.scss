@@ -44,7 +44,7 @@ text-align: left;
         margin-top: 0;
     }
     @media screen and (min-width: $desktop) {
-        margin-left: 168px;
+        margin-left: 161px;
     }
 }
 .text-how{
@@ -134,14 +134,19 @@ text-align: left;
         color: #FFFFFF;
     }
 }
-.container-general{
+.general{
+    @media screen and (min-width: $mobile){
+      margin-left: 0;
+      margin-right: 0;
+    }
     @media screen and (min-width: $tablet){
         display: flex;
     }
 }
 .when-box{
     @media screen and (min-width: $mobile){
-        margin-left: 33px;
+        margin-left: 0;
+        margin-right: 0;
     }
     @media screen and (min-width: $tablet){
         margin-right: 20px;
