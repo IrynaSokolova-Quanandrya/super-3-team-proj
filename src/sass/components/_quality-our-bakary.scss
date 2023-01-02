@@ -57,7 +57,7 @@
 
         @media screen and (min-width: $desktop) {
             font-size: 96px;
-            margin-bottom: 0;
+            margin-bottom: 50px;
         }
     }
 
@@ -151,6 +151,10 @@
     
     .list-quality{
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
         list-style: none;
         justify-content: center;
@@ -166,8 +170,8 @@
     }
     .kard-2{
         @media screen and (min-width: $desktop) {
-            top: 78px;
             position: absolute;
+            top: 75px;            
             left: 371px;
         }
         
