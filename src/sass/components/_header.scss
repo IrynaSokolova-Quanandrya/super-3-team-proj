@@ -1,7 +1,7 @@
 
 
 .header{
-    position: fixed;
+    // position: fixed;
     width: 100%;
 
 // Для всього крім мобілки старт
@@ -55,7 +55,7 @@
     .header-hamburger{
         width: 60px;
         height: 60px;
-        background: url(../images/header/menu_burger_icon_177188);
+        background: url(../images/header/menu_burger_icon_177188.svg);
         z-index: 1000;
         cursor: pointer;
         background-size: contain;
@@ -68,10 +68,11 @@
         width: 100%;
         left: -100%;
         top: 0;
-        background-image:url(../images/header/background) ;
+        background-image:url(../images/header/background.jpg) ;
         transition: left 0.7s;
      
         padding-top: 65px;
+        overflow: scroll;
         }
         &-list{
             margin-right: 100px;
